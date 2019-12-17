@@ -1,0 +1,94 @@
+/* ==================================================
+——————————————————————————————————————————————————
+RESET
+——————————————————————————————————————————————————
+================================================== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+——————————————————————————————————————————————————
+GENERAL
+——————————————————————————————————————————————————
+================================================== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  background: #444;
+  color: #fff;
+}
+
+.container {
+  max-width: 860px;
+  height: 100%;
+  margin: 32px auto;
+  text-align: center;
+}
+
+/* ——————————————————————————————————————————————————
+Header */
+
+header {
+  padding: 32px;
+  background: #1d628b;
+}
+
+/* ——————————————————————————————————————————————————
+Main */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+main > div {
+  padding: 32px;
+  background: #fffff7;
+  color: #444;
+}
+
+main .data:first-child {
+  flex-basis: 50%;
+}
+
+main .data:nth-child(2n) {
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  main .data:first-child {
+    flex-basis: 100%;
+  }
+
+  main .data:nth-child(2n) {
+    flex-basis: 100%;
+  }
+}
+
+main .data:last-child {
+  flex-basis: 100%;
+}
+
+#user-nome, #user-cognome { text-transform: capitalize; }
+#user-password { text-transform: lowercase; }
+
+/* ——————————————————————————————————————————————————
+Footer */
+
+footer {
+  background: #4589B0;
+  padding: 12px;
+}
+
+#user-pwd {
+  text-transform: lowercase;
+}
